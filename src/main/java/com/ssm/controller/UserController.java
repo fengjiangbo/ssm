@@ -14,10 +14,10 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping(value="/userList",method= RequestMethod.GET)
-    public void getUserList() {
+    public String getUserList() {
 
         userService.getUserList();
-        //return 
+        return "index";
     }
 
 }
